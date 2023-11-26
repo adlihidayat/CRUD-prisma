@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const OptionList = ({ data, prevData }: any) => {
   //   console.log(data);
@@ -131,9 +132,11 @@ const EditForm = (data: any) => {
         placeholder={data.data.food.img}
       />
       {inputImg && (
-        <img
+        <Image
           src={inputImg}
           alt="image error"
+          height={100}
+          width={100}
           className=" w-[260px] h-60 object-cover rounded-xl"
         />
       )}
