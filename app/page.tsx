@@ -14,7 +14,6 @@ const getFoods = async () => {
       country: true,
       rating: true,
       desc: true,
-      ingredient: true,
       ingredientId: true,
       howToCook: true,
       video: true,
