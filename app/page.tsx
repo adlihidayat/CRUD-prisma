@@ -14,7 +14,11 @@ const getFoods = async () => {
       country: true,
       rating: true,
       desc: true,
-      ingredientId: true,
+      ingredient: {
+        select: {
+          id: true,
+        },
+      },
       howToCook: true,
       video: true,
     },
